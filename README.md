@@ -64,9 +64,9 @@ This project investigates:
 
 ---
 
-# Key Findings
+## Key Findings
 
-## 1. User identities are not stable
+### 1. User identities are not stable
 
 The same `user_id` can appear under multiple professions across the observed time span.
 
@@ -74,7 +74,7 @@ The same `user_id` can appear under multiple professions across the observed tim
 
 ![Identity examples](visuals/figure_1_identity_examples.png)
 
-### Implication
+#### Implication
 
 `user_id` does not appear to represent persistent individuals.
 
@@ -88,7 +88,7 @@ should be interpreted with caution.
 
 ---
 
-## 2. Tool usage is weakly specialized across tasks
+### 2. Tool usage is weakly specialized across tasks
 
 AI tools appear across a broad range of use cases regardless of their real-world purpose.
 
@@ -98,13 +98,13 @@ For example, GitHub Copilot ranks among the most frequently assigned tools for I
 
 ![Top tools used for Image Generation](visuals/figure_2_tools_image_generation.png)
 
-### Implication
+#### Implication
 
 Tool assignment appears broadly distributed across task categories, suggesting that the simulation prioritizes broad tool-task coverage over realistic specialization.
 
 ---
 
-## 3. Profession-use case relationships appear weak
+### 3. Profession-use case relationships appear weak
 
 Professions appear across many task categories with relatively similar frequencies.
 
@@ -114,7 +114,7 @@ For example, professions such as Journalist, Consultant, Architect, HR Manager, 
 
 ![Top professions associated with UI Design](visuals/figure_3_profession_ui_design.png)
 
-### Implication
+#### Implication
 
 Profession appears to function more as a descriptive category than a strong driver of behavior.
 
@@ -122,7 +122,7 @@ The distribution suggests limited specialization between profession and task ass
 
 ---
 
-## 4. Confidence scores are highly constrained
+### 4. Confidence scores are highly constrained
 
 Confidence variables occupy unusually narrow ranges.
 
@@ -132,13 +132,13 @@ Confidence variables occupy unusually narrow ranges.
 
 The ranges remain identical across both the 300,000-record subset and the complete dataset.
 
-### Implication
+#### Implication
 
 Confidence appears to be partially governed by simulation rules rather than emerging naturally from the interaction patterns represented in the dataset.
 
 ---
 
-## 5. Iteration count and session length show little observable association
+### 5. Iteration count and session length show little observable association
 
 Iteration count shows virtually no relationship with average session length despite both variables describing aspects of user effort and interaction intensity.
 
@@ -148,13 +148,13 @@ Iteration count shows virtually no relationship with average session length desp
 
 The relationship remains nearly identical in both the 300,000-record subset and the full dataset.
 
-### Implication
+#### Implication
 
 These variables appear to have been generated independently rather than reflecting patterns that would typically be expected in real-world interactions.
 
 ---
 
-## 6. Productivity gain behaves differently depending on the comparison used
+### 6. Productivity gain behaves differently depending on the comparison used
 
 Productivity gain appears to show different patterns depending on whether it is compared with baseline performance or AI-assisted performance.
 
@@ -170,7 +170,7 @@ Productivity gain appears to show different patterns depending on whether it is 
 
 ![AI-assisted quality vs productivity gain](visuals/figure_7_productivity_gain_with_ai.png)
 
-### Implication
+#### Implication
 
 Productivity gain appears sensitive to how performance is measured. Different patterns emerge depending on whether comparisons are made against baseline performance or AI-assisted performance.
 
@@ -178,9 +178,9 @@ Unlike several other variables in the dataset, this relationship shows a more st
 
 ---
 
-# Additional Observations
+### Additional Observations
 
-## Deadline pressure appears largely independent of outcomes
+#### Deadline pressure appears largely independent of outcomes
 
 Deadline pressure is distributed relatively evenly throughout the dataset and exhibits limited association with:
 
@@ -190,13 +190,13 @@ Deadline pressure is distributed relatively evenly throughout the dataset and ex
 
 ---
 
-## Confidence and overreliance show limited association
+#### Confidence and overreliance show limited association
 
 Average overreliance scores remain nearly constant across all confidence levels. Observed variation is minimal despite these variables representing behaviors that would normally be expected to relate to one another.
 
 ---
 
-# Interpretation
+## Interpretation
 
 The dataset successfully generates large-scale synthetic AI interaction records and contains several internally consistent relationships.
 
@@ -214,7 +214,7 @@ Taken together, these findings suggest that the dataset prioritizes structural c
 
 ---
 
-# Limitations
+## Limitations
 
 * Several variables lack detailed documentation.
 * Conclusions are based solely on the released dataset rather than the underlying generation code.
@@ -223,7 +223,7 @@ Taken together, these findings suggest that the dataset prioritizes structural c
 
 ---
 
-# Conclusion
+## Conclusion
 
 This project examined whether a large synthetic dataset of human-AI interactions supports meaningful behavioral interpretation beyond surface-level exploration.
 
@@ -233,13 +233,13 @@ Overall, the findings suggest that the dataset prioritizes broad scenario covera
 
 ---
 
-# License
+## License
 
 The code and original materials in this repository are licensed under the MIT License.
 
 ---
 
-# Dataset Notice 
+## Dataset Notice 
 
 This project analyzes the AI Usage vs Output Quality Dataset by Aashyu R, which is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
