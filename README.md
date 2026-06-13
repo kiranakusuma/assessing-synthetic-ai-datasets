@@ -47,7 +47,7 @@ This project investigates:
 * SQLite for exploratory querying and investigation
 * DuckDB for validation against the complete dataset
 * SQLTools for query execution and organization
-* Python for visualization and supporting analysis
+* Google Data Studio for visualization and supporting analysis
 
 ---
 
